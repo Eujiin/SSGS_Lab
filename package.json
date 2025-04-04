@@ -1,0 +1,16 @@
+{
+  "name": "ssgs_calc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Semplice calcolatrice con interfaccia a riga di comando",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
