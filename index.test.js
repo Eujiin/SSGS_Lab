@@ -8,7 +8,7 @@ test('Esercizio 1, test addizione di 2+2, deve fare 4', () => {
     // 2. Verifica tramite un'asserzione che il valore di quella variabile è uguale a 4
     expect(result).toBe(4);
 });
-test('Esercizio 2, test addizione SBAGLIATO, deve fallire', () => {
+test.skip('Esercizio 2, test addizione SBAGLIATO, deve fallire', () => {
     //1. Somma gli interi 3 e 5 e memorizza il risultato in una variabile 
     const result = calculator.add(3, 5);
     
