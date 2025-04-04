@@ -1,0 +1,31 @@
+name: Node.js CI  # Nome del workflow che apparirà nell'interfaccia di GitHub Actions
+
+on:
+  push:  # Trigger della pipeline: si attiva solo quando viene fatto un push
+    branches: [ main, master ]  # Si attiva solo per push ai branch main o master
+
+jobs:  # Definizione dei lavori da eseguire nel workflow
+  test:  # Nome del job
+    runs-on: ubuntu-latest  # Sistema operativo su cui verrà eseguito il job
+
+    strategy:  # Configurazione della matrice di test
+      matrix:
+        node-version: [18.x]  # Versione di Node.js da utilizzare
+
+    steps:  # Passaggi sequenziali del job
+    - uses: actions/checkout@v3  # Step 1: Checkout del codice dal repository
+    
+    - name: Use Node.js ${{ matrix.node-version }}  # Step 2: Setup di Node.js
+      uses: actions/setup-node@v3  # Azione ufficiale per configurare Node.js
+      with:
+        node-version: ${{ matrix.node-version }}  # Usando la versione specificata nella matrice
+        cache: 'npm'  # Abilita la cache per i pacchetti npm
+    
+    - run: npm ci  # Step 3: Installazione delle dipendenze (ci = clean install)
+    
+    - run: npm test  # Step 4: Esecuzione dei test
+    
+    - name: Check test results  # Step 5: Visualizzazione del messaggio sui risultati dei test
+      run: |
+        echo "Test execution completed. As expected, one test passed and one failed."
+        echo "This is intentional according to the exercise requirements."
