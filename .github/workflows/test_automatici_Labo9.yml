@@ -23,7 +23,7 @@ jobs:  # Definizione dei lavori da eseguire nel workflow
     
     - run: npm ci  # Step 3: Installazione delle dipendenze (ci = clean install)
     
-    - run: npm test  # Step 4: Esecuzione dei test
+    - run: npm run test:coverage #npm test  # Step 4: Esecuzione dei test
     
     - name: Check test results  # Step 5: Visualizzazione del messaggio sui risultati dei test
       run: |
