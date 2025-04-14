@@ -1,4 +1,5 @@
-# SSGS Calc - Calcolatrice CLI
+
+# [5577783] SSGS Calc - Calcolatrice CLI
 
 ## Descrizione
 SSGS Calc è una semplice calcolatrice con interfaccia a riga di comando (CLI) sviluppata come parte dei laboratori 6, 7, 8 e 9 del corso di Sviluppo di Sistemi di Gestione Software. Il progetto implementa le operazioni matematiche di base con un'interfaccia utente interattiva tramite terminale.
