@@ -15,7 +15,7 @@ La calcolatrice supporta le seguenti operazioni:
 ## Struttura del Progetto
 - `calculator.js` - Il modulo che implementa le operazioni matematiche di base
 - `index.js` - L'interfaccia utente a riga di comando
-- `index.test.js` - Test automatizzati per verificare il corretto funzionamento delle operazioni
+- `calculator.test.js` - Test automatizzati per verificare il corretto funzionamento delle operazioni
 
 ## Come Utilizzare
 1. Clonare il repository

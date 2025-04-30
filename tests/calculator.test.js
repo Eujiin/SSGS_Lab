@@ -1,7 +1,7 @@
 //to run test on terminal -> npm test 
 // to run test on terminal with coverage insights -> npm run test:coverage
 
-const calculator = require('./calculator');
+const calculator = require('../src/calculator');
 
 // Tests per l'operazione di addizione
 test('Esercizio 1, test addizione di 2+2, deve fare 4', () => {
