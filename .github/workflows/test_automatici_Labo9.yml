@@ -30,6 +30,6 @@ jobs:  # Definizione dei lavori da eseguire nel workflow
     - name: Upload coverage report  # Carica il report di coverage come artefatto
       uses: actions/upload-artifact@v4
       with:
-        name: coverage-report
+        name: coverage-report-${{ matrix.node-version }}
         path: coverage/
         retention-days: 7  # Mantieni l'artefatto per 7 giorni
