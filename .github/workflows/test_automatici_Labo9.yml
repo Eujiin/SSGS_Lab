@@ -12,7 +12,7 @@ jobs:  # Definizione dei lavori da eseguire nel workflow
 
     strategy:  # Configurazione della matrice di test
       matrix:
-        node-version: [18.x]  # Versione di Node.js da utilizzare
+        node-version: [16.x, 18.x, 20.x]  # Versioni di Node.js da utilizzare
 
     steps:  # Passaggi sequenziali del job
     - uses: actions/checkout@v4  # Step 1: Checkout del codice dal repository

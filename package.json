@@ -7,11 +7,14 @@
     "test:coverage": "jest --coverage",
     "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["calc", "cli", "ssgs"],
+  "author": "Vassallo Eugenio",
   "license": "ISC",
   "description": "Semplice calcolatrice con interfaccia a riga di comando",
   "devDependencies": {
     "jest": "^29.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
